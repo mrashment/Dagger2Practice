@@ -3,6 +3,7 @@ package com.example.dagger2practice.ui.auth;
 
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 
 import androidx.lifecycle.ViewModelProvider;
@@ -30,5 +31,6 @@ public class AuthActivity extends DaggerAppCompatActivity {
 
         viewModel = new ViewModelProvider(this, providerFactory).get(AuthViewModel.class);
 
+        Toast.makeText(this,viewModel.getInts().toString(),Toast.LENGTH_LONG).show();
     }
 }
