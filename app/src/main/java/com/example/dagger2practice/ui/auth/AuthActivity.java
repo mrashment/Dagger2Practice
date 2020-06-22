@@ -30,7 +30,5 @@ public class AuthActivity extends DaggerAppCompatActivity {
         setContentView(R.layout.activity_auth);
 
         viewModel = new ViewModelProvider(this, providerFactory).get(AuthViewModel.class);
-
-        Toast.makeText(this,viewModel.getInts().toString(),Toast.LENGTH_LONG).show();
     }
 }
