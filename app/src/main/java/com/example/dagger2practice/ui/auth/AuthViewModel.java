@@ -17,8 +17,9 @@ public class AuthViewModel extends ViewModel {
     private final AuthApi authApi;
 
     @Inject
-    public AuthViewModel() {
-        Log.d(TAG, "AuthViewModel: ViewModel created");
+    public AuthViewModel(AuthApi authApi) {
+        this.authApi = authApi;
+        Log.d(TAG, "AuthViewModel: AuthApi is " + (authApi != null));
     }
 
 }
