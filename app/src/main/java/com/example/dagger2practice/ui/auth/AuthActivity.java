@@ -3,6 +3,7 @@ package com.example.dagger2practice.ui.auth;
 
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
@@ -21,6 +22,8 @@ public class AuthActivity extends DaggerAppCompatActivity {
 
     private AuthViewModel viewModel;
 
+    private EditText userId;
+
     @Inject
     ViewModelProviderFactory providerFactory;
 
@@ -28,6 +31,7 @@ public class AuthActivity extends DaggerAppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
+//        userId = findViewById()
 
         viewModel = new ViewModelProvider(this, providerFactory).get(AuthViewModel.class);
     }
