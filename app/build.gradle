@@ -58,4 +58,6 @@ dependencies {
 
     //RxJava
     implementation "io.reactivex.rxjava3:rxjava:3.0.4"
+    implementation 'io.reactivex:rxjava-reactive-streams:1.2.1'
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version"
 }
